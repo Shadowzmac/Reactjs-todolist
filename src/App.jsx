@@ -9,7 +9,7 @@ function App() {
   const [todoValue, setTodoValue] = useState('')
 
 
-  function persistData(newList) {
+  function persistData(newList) {           // allows for data to remain on the page even after refresh
     localStorage.setItem('todos', JSON.stringify({todos:
       newList}))
   }
